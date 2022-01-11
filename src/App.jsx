@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useCallback } from 'react'
 import "./style/App.css"
 
 // const slides = [
@@ -12,10 +12,14 @@ const App = () => {
 
     const [ activeSlide, setActiveSlide ] = useState(0)
     const [ elemHeight, setElemHeight ] = useState(0)
-    const containerRef = useRef()
     const slidesCount = 4
 
-    useEffect(() => setElemHeight(containerRef.current.clientHeigth), [])
+    const containerRef = useCallback(node => {
+        if (node !== null) {
+          setElemHeight(node.getBoundingClientRect().height);
+        }
+      }, []);
+
 
 
     const changeSlide = (direction) => {
@@ -40,23 +44,23 @@ const App = () => {
                 transform: `translateY(${activeSlide * elemHeight}px)`
             }}>
                 <div style={{background: "linear-gradient(229.99deg, #11DEE9 -26%, #017E8B 145%)"}}>
-                    <h1>Snow in the desert</h1>
-                    <p>Love, death & robots</p>
+                    <h1>Home</h1>
+                    <p>Portfolio React Developer</p>
                 </div>
                 <div style={{background: "linear-gradient(215.32deg, #F90306 -1%, #9E0706 124%)"}}>
-                    <h1>Life Hutch</h1>
+                    <h1>About</h1>
                     <p>Love, death & robots</p>
                 </div>
                 <div style={{background: "linear-gradient(221.87deg, #8308EA 1%, #5305AF 128%)"}}>
-                    <h1>Zima Blue</h1>
+                    <h1>Portfolio</h1>
                     <p>Love, death & robots</p>
                 </div>
                 <div style={{background: "linear-gradient(220.16deg, #FFE101 -8%, #F39102 138%)"}}>
-                    <h1>Automated Customer Service</h1>
+                    <h1>Contact</h1>
                     <p>Love, death & robots</p>
                 </div>
             </div>
-            <div className="main-slyde" style={{
+            <div className="main-slide" style={{
                 transform: `translateY(-${activeSlide * elemHeight}px)`
             }}>
                 <div>
