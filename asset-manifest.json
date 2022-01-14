@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.0b1283c9.css",
+    "main.js": "/portfolio/static/js/main.a7fda27a.js",
+    "static/media/GitHub-logo-baner.png": "/portfolio/static/media/GitHub-logo-baner.b003afd99032a3c99b07.png",
+    "static/media/finance.jpg": "/portfolio/static/media/finance.c094cf715ed17f7c96bf.jpg",
+    "static/media/nft.png": "/portfolio/static/media/nft.1dd10c0e2c7eda76f50f.png",
+    "static/media/airsoft.jpg": "/portfolio/static/media/airsoft.b00b16b599dc2cf2567e.jpg",
+    "static/media/photo_2022-01-13_23-42-53.jpg": "/portfolio/static/media/photo_2022-01-13_23-42-53.5641faf36b97872948fc.jpg",
+    "static/media/psychology.jpg": "/portfolio/static/media/psychology.cea664ff368d9faeda85.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.0b1283c9.css.map": "/portfolio/static/css/main.0b1283c9.css.map",
+    "main.a7fda27a.js.map": "/portfolio/static/js/main.a7fda27a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b1283c9.css",
+    "static/js/main.a7fda27a.js"
+  ]
+}
