@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
 
 
 .container {
@@ -54,6 +56,7 @@
   .main-slide img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
   button {
     background-color: #fff;
@@ -91,3 +94,222 @@
     border-bottom-right-radius: 5px;
   }
   
+  .ms-slide {
+    background-color: #464646;
+    color: white;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .s-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 20px;
+    flex-direction: column;
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    animation: fadeOut 1s;
+  }
+
+  .s-container h1 {
+    margin: 5px 5px;
+  }
+
+  .s-container h3 {
+    margin: 5px 5px;
+  }
+
+  /* animation  */
+
+  .home {
+    background: linear-gradient(215.32deg, #F90306 -1%, #9E0706 124%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .h-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+  }
+
+  .anim-fade-out {
+    animation: fadeOut 2s;
+  }
+
+  .h-container h1 {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    text-shadow: 2px 6px 5px rgba(150, 150, 150, 1);
+  }
+
+  .h-container h3 {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px; 
+    font-family: 'Roboto', serif;
+    font-size: 24px;
+  }
+
+  .h-container img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .about {
+    background: linear-gradient(229.99deg, #11DEE9 -26%, #017E8B 145%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .a-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 50%;
+    border-radius: 20px;
+    flex-direction: column;
+    -webkit-box-shadow: 8px 8px 10px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 10px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 10px 0px rgba(66, 68, 90, 1);
+    transition: ease-out 1s;
+    animation: fadeOut 1s;
+  }
+
+  .a-container h3 {
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .a-container p {
+    font-family: Roboto, serif;
+    font-size: 18px;
+    margin: 5px;
+  }
+
+  .portfolio {
+    /* background: linear-gradient(220.16deg, #FFE101 -8%, #F39102 138%); */
+    background-color: #363636;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contacts {
+    background: linear-gradient(221.87deg, #8308EA 1%, #5305AF 128%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .c-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 50%;
+    flex-direction: column;
+  }
+
+  .c-container h3 {
+    font-size: 36px;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .contact-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 75%;
+  }
+
+  .c-container a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+  }
+
+  .c-container span {
+    font-size: 18px;
+  }
+
+  .p-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+    width: 100%;
+    color: white;
+  }
+  
+  .p-container h1 {
+    font-size: 36px;
+    font-family: Roboto;
+  }
+
+  .images-slider {
+    display: flex;
+    width: 100%;
+  }
+
+  .p-image {
+    position: relative;
+    height: 80vh;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 500ms ease-in-out;
+    }
+    
+    .p-image h3 {
+    position: absolute;
+    font-size: 24px;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+    }
+    
+    .p-image.active {
+    flex: 15
+    }
+    
+    .p-image.active h3 {
+      opacity: 1;
+      transition: opacity 0.3s ease-in 0.4s;
+    }
+
+    .p-image a {
+      text-decoration: none;
+      color: white;
+    }
