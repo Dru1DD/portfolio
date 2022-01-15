@@ -1,4 +1,5 @@
-import React, { useState, useCallback } from 'react'
+import React, { useState, useEffect } from 'react'
+import { useWindowSize } from './hook/useWindowSize'
 import logo from './assets/photo_2022-01-13_23-42-53.jpg'
 import airsoft from './assets/airsoft.jpg'
 import finance from './assets/finance.jpg'
@@ -21,13 +22,17 @@ const App = () => {
     const slidesCount = 4
 
 
-    const containerRef = useCallback(node => {
+    const containerRef = node => {
         if (node !== null) {
           setElemHeight(node.getBoundingClientRect().height);
         }
-      }, []);
+      }
 
 
+      useEffect(() => {
+            const conRef = document.querySelector('.container')
+            setElemHeight(conRef.clientHeight)
+      }, [])
 
     const changeSlide = (direction) => {
         if(direction === 'up') {
@@ -35,33 +40,28 @@ const App = () => {
             if((activeSlide + 1) === slidesCount) {
                 setActiveSlide(0)
             }
-            console.log(`Up: ${true}, activeSlide: ${activeSlide}`)
         } else if (direction === 'down') {
             setActiveSlide(activeSlide - 1)
             if((activeSlide - 1) < 0) {
                 setActiveSlide(slidesCount - 1)
             }
-            console.log(`Down: ${true}, activeSlide: ${activeSlide}`)
         }
     }
     return (
         <div className="container" ref={containerRef}>
             <div className="sidebar"  style={{ 
                 top: `-${(slidesCount - 1) * 100}vh`,
-                transform: `translateY(${activeSlide * elemHeight}px)`
+                transform:  `translateY(${activeSlide * elemHeight}px)`
             }}>
-                
                 <div style={{background: "linear-gradient(220.16deg, #FFE101 -8%, #F39102 138%)"}}>
-                    <h1><i class="fas fa-envelope"></i> Contact</h1>                         
+                    <h1><i class="fas fa-envelope"></i> Contact</h1>
                 </div>
                 <div style={{background: "linear-gradient(221.87deg, #8308EA 1%, #5305AF 128%)"}}>
                     <h1><i class="fas fa-calendar"></i> Portfolio</h1>
-               
                 </div>
-                 <div style={{background: "linear-gradient(215.32deg, #F90306 -1%, #9E0706 124%)"}}>
+                <div style={{background: "linear-gradient(215.32deg, #F90306 -1%, #9E0706 124%)"}}>
                     <h1><i class="fas fa-chalkboard"></i> About</h1>
                 </div>
-                
                 <div style={{background: "linear-gradient(229.99deg, #11DEE9 -26%, #017E8B 145%)"}}>
                     <h1><i class="fas fa-home"></i> Home</h1>
                 </div>
@@ -69,6 +69,7 @@ const App = () => {
             <div className="main-slide" style={{
                 transform: `translateY(-${activeSlide * elemHeight}px)`
             }}>
+                
                 <div className="home">
                     <div className="h-container">
                         <img src={logo} alt="logo" />
@@ -76,7 +77,7 @@ const App = () => {
                         <h3>Junior Front-end Developer</h3>
                     </div>
                 </div>
-                <div className="about">
+               <div className="about">
                     <div className="a-container">
                         <h3>About</h3>
                         <hr style={{width: '75%'}}/>
@@ -98,7 +99,6 @@ const App = () => {
                         </ol>
                     </div>
                 </div>
-
                 <div className="portfolio">
                     <div className="p-container">
                         <h1>Portfolio</h1>
@@ -176,12 +176,13 @@ const App = () => {
                                     isFifthActive: true
                                 })}
                             >
-                                <h3 style={{color: 'black'}}><a href="https://github.com/Dru1DD">Check Github for more project</a></h3>
+                                <h3><a href="https://github.com/Dru1DD" style={{color: 'black'}}>Check Github for more project</a></h3>
                             </div>
                         </div>
                     </div>
                 </div>
-                                <div className="contacts">
+                
+                 <div className="contacts">
                     <div className="c-container">
                         <h3>Contacts</h3>
                         <hr style={{width: '75%'}}/>
@@ -203,14 +204,13 @@ const App = () => {
                         </div>
                     </div>
                 </div>
-                
             </div>
-            <div className="controls">
-                <button className="down-button" onClick={() => changeSlide('down')}>
-                    <i className="fas fa-arrow-down" />
+            <div class="controls">
+                <button class="down-button" onClick={() => changeSlide('down')}>
+                    <i class="fas fa-arrow-down"></i>
                 </button>
-                <button className="up-button" onClick={() => changeSlide('up')}>
-                    <i className="fas fa-arrow-up" />
+                <button class="up-button" onClick={() => changeSlide('up')}>
+                    <i class="fas fa-arrow-up"></i>
                 </button>
             </div>
         </div>

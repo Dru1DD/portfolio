@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
 
-
-
 .container {
     position: relative;
     overflow: hidden;
@@ -185,6 +183,7 @@
   }
 
   .a-container {
+    background: linear-gradient(221.87deg, #8308EA 1%, #5305AF 128%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -211,7 +210,7 @@
   }
 
   .portfolio {
-    /* background: linear-gradient(220.16deg, #FFE101 -8%, #F39102 138%); */
+    background: linear-gradient(220.16deg, #FFE101 -8%, #F39102 138%);
     background-color: #363636;
     display: flex;
     justify-content: center;
@@ -312,4 +311,13 @@
     .p-image a {
       text-decoration: none;
       color: white;
+    }
+
+    .p-image a:after {
+      display: block;
+      content: "";
+      height: 3px; 
+      width: 100%;
+      background-color: white; 
+      transition: width 0.5s ease-in-out; 
     }
