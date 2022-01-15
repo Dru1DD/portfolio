@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { useWindowSize } from './hook/useWindowSize'
 import logo from './assets/photo_2022-01-13_23-42-53.jpg'
 import airsoft from './assets/airsoft.jpg'
 import finance from './assets/finance.jpg'
