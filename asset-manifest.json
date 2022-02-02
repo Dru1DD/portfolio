@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "./static/css/main.9ce6cc58.css",
-    "main.js": "./static/js/main.3dfefd68.js",
-    "static/media/GitHub-logo-baner.png": "./static/media/GitHub-logo-baner.b003afd99032a3c99b07.png",
-    "static/media/finance.jpg": "./static/media/finance.c094cf715ed17f7c96bf.jpg",
-    "static/media/nft.png": "./static/media/nft.1dd10c0e2c7eda76f50f.png",
-    "static/media/airsoft.jpg": "./static/media/airsoft.b00b16b599dc2cf2567e.jpg",
-    "static/media/photo_2022-01-13_23-42-53.jpg": "./static/media/photo_2022-01-13_23-42-53.5641faf36b97872948fc.jpg",
-    "static/media/psychology.jpg": "./static/media/psychology.cea664ff368d9faeda85.jpg",
-    "index.html": "./index.html",
-    "main.9ce6cc58.css.map": "./static/css/main.9ce6cc58.css.map",
-    "main.3dfefd68.js.map": "./static/js/main.3dfefd68.js.map"
+    "main.css": "/dru1dd.github.io/portfolio/static/css/main.e06c4331.css",
+    "main.js": "/dru1dd.github.io/portfolio/static/js/main.a21af21e.js",
+    "static/media/GitHub-logo-baner.png": "/dru1dd.github.io/portfolio/static/media/GitHub-logo-baner.b003afd99032a3c99b07.png",
+    "static/media/finance.jpg": "/dru1dd.github.io/portfolio/static/media/finance.c094cf715ed17f7c96bf.jpg",
+    "static/media/nft.png": "/dru1dd.github.io/portfolio/static/media/nft.1dd10c0e2c7eda76f50f.png",
+    "static/media/airsoft.jpg": "/dru1dd.github.io/portfolio/static/media/airsoft.b00b16b599dc2cf2567e.jpg",
+    "static/media/photo_2022-01-13_23-42-53.jpg": "/dru1dd.github.io/portfolio/static/media/photo_2022-01-13_23-42-53.5641faf36b97872948fc.jpg",
+    "static/media/psychology.jpg": "/dru1dd.github.io/portfolio/static/media/psychology.cea664ff368d9faeda85.jpg",
+    "index.html": "/dru1dd.github.io/portfolio/index.html",
+    "main.e06c4331.css.map": "/dru1dd.github.io/portfolio/static/css/main.e06c4331.css.map",
+    "main.a21af21e.js.map": "/dru1dd.github.io/portfolio/static/js/main.a21af21e.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ce6cc58.css",
-    "static/js/main.3dfefd68.js"
+    "static/css/main.e06c4331.css",
+    "static/js/main.a21af21e.js"
   ]
 }
