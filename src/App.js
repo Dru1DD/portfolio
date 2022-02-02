@@ -53,16 +53,16 @@ const App = () => {
                 transform:  `translateY(${activeSlide * elemHeight}px)`
             }}>
                 <div style={{background: "linear-gradient(220.16deg, #FFE101 -8%, #F39102 138%)"}}>
-                    <h1><i class="fas fa-envelope"></i> Contact</h1>
+                    <h1><i className="fas fa-envelope"></i> Contact</h1>
                 </div>
                 <div style={{background: "linear-gradient(221.87deg, #8308EA 1%, #5305AF 128%)"}}>
-                    <h1><i class="fas fa-calendar"></i> Portfolio</h1>
+                    <h1><i className="fas fa-calendar"></i> Portfolio</h1>
                 </div>
                 <div style={{background: "linear-gradient(215.32deg, #F90306 -1%, #9E0706 124%)"}}>
-                    <h1><i class="fas fa-chalkboard"></i> About</h1>
+                    <h1><i className="fas fa-chalkboard"></i> About</h1>
                 </div>
                 <div style={{background: "linear-gradient(229.99deg, #11DEE9 -26%, #017E8B 145%)"}}>
-                    <h1><i class="fas fa-home"></i> Home</h1>
+                    <h1><i className="fas fa-home"></i> Home</h1>
                 </div>
             </div>
             <div className="main-slide" style={{
@@ -80,10 +80,10 @@ const App = () => {
                     <div className="a-container">
                         <h3>About</h3>
                         <hr style={{width: '75%'}}/>
-                        <p>A young 18-year-old boy from Ukraine. Cheerful, love to learn new things
+                        <span>A young 18-year-old boy from Ukraine. Cheerful, love to learn new things
                              also love challenging trials.
-                         </p>
-                         <p>1.5 years of development experience. A month of work at JobTerix and 4 months of freelancing.</p>
+                         </span>
+                         <span>1.5 years of development experience. A month of work at JobTerix and 4 months of freelancing.</span>
                         <p>Stack:</p>
                         <ol>
                             <li>Html</li>
@@ -199,17 +199,17 @@ const App = () => {
                         </div>
                         <div className="contact-links">
                             <span>Telegram</span>
-                            <a href=" https://t.me/Dru1DD"><i style={{color: 'white'}} class="fab fa-telegram" /></a>
+                            <a href=" https://t.me/Dru1DD"><i style={{color: 'white'}} className="fab fa-telegram" /></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="controls">
-                <button class="down-button" onClick={() => changeSlide('down')}>
-                    <i class="fas fa-arrow-down"></i>
+            <div className="controls">
+                <button className="down-button" onClick={() => changeSlide('down')}>
+                    <i className="fas fa-arrow-down"></i>
                 </button>
-                <button class="up-button" onClick={() => changeSlide('up')}>
-                    <i class="fas fa-arrow-up"></i>
+                <button className="up-button" onClick={() => changeSlide('up')}>
+                    <i className="fas fa-arrow-up"></i>
                 </button>
             </div>
         </div>
