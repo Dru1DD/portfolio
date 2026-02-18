@@ -9,7 +9,12 @@ type SectionHeadingProps = {
 const SectionHeading: React.FC<SectionHeadingProps> = ({ title, subtitle }) => {
   return (
     <div className="mb-12 md:mb-16">
-      <BlurText text={title} animateBy="letters" className="text-3xl md:text-4xl lg:text-5xl font-bold" delay={30} />
+      <BlurText
+        text={title}
+        animateBy="letters"
+        className="text-3xl md:text-4xl lg:text-5xl font-bold flex flex-wrap"
+        delay={30}
+      />
       {subtitle && (
         <p className="mt-4 text-secondary text-lg max-w-2xl animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
           {subtitle}

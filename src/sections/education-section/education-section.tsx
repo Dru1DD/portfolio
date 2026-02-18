@@ -12,7 +12,6 @@ const EducationSection: React.FC = () => {
         <SectionHeading title="Education & Languages" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {/* Education card */}
           <div
             className="relative overflow-hidden rounded-2xl
               bg-gradient-to-br from-white/[0.05] to-white/[0.01]
@@ -55,7 +54,6 @@ const EducationSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Languages card */}
           <div
             className="relative overflow-hidden rounded-2xl
               bg-gradient-to-br from-white/[0.05] to-white/[0.01]

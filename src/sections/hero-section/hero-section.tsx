@@ -36,7 +36,7 @@ const HeroSection: React.FC = () => {
         <BlurText
           text={PERSONAL_INFO.name}
           animateBy="letters"
-          className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tight text-text-primary"
+          className="text-3xl md:text-6xl lg:text-7xl font-black tracking-tight text-text-primary justify-center"
           delay={40}
         />
 
