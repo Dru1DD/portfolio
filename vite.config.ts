@@ -1,18 +1,13 @@
-import path from 'path';
 import { defineConfig } from 'vite';
-import tsconfigPaths from 'vite-tsconfig-paths';
-import react from '@vitejs/plugin-react'
+import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
+import path from 'path';
 
-// https://vite.dev/config/
 export default defineConfig({
-  build: {
-    sourcemap: true,
-  },
-  plugins: [react(), tsconfigPaths()],
+  plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src'),
-      '@slides': path.resolve(__dirname, 'src/features/slides'),
+      '@': path.resolve(__dirname, './src'),
     },
   },
-})
+});

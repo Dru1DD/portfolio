@@ -1,35 +1,41 @@
 {
-  "name": "portfolio",
+  "name": "cv",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host",
+    "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "format:check": "prettier --check './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
   "dependencies": {
-    "lucide-react": "^0.534.0",
-    "postcss-assign-layer": "^0.4.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "@gsap/react": "^2.1.2",
+    "@tailwindcss/vite": "^4.1.18",
+    "gsap": "^3.14.2",
+    "lucide-react": "^0.564.0",
+    "motion": "^12.34.0",
+    "ogl": "^1.0.11",
+    "path": "^0.12.7",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
-    "@eslint/js": "^9.30.1",
-    "@types/node": "^24.1.0",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
-    "@vitejs/plugin-react": "^4.6.0",
-    "eslint": "^9.30.1",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
-    "globals": "^16.3.0",
-    "prettier": "^3.6.2",
-    "sass": "^1.89.2",
-    "typescript": "~5.8.3",
-    "typescript-eslint": "^8.35.1",
-    "vite": "^7.0.4",
-    "vite-tsconfig-paths": "^5.1.4"
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "prettier": "^3.8.1",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.48.0",
+    "vite": "^7.3.1"
   }
 }
